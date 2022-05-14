@@ -1,4 +1,7 @@
 # GROUP-11-PROJECT https://verreauxx.github.io/GROUP-11-PROJECT/
-git add -A 
-git commit -m "Unique message"
-git push origin "Your Branch"
+git status
+git add --all
+git commit -m “message”
+git pull origin main
+git push origin <branch name>
+
