@@ -8,32 +8,34 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <script type="module" src="main.bc58148c.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="main.bc58148c.js"></script>
   <body>
 
     <main>
       <header>
         <div>
           <img src="https://i.ibb.co/2qpHXJY/Whip-Logo.png" alt="Company Logo">
-          <p>Whip up a recipe, or Whip around the corner!</p>
+          <p>Whip up a recipe, or around the corner!</p>
         </div>
       </header>
 
-      <h1>Restaurant Map</h1>
-      <div id="map"></div>
-        <input
-        id="pac-input"
-        class="controls"
-        type="text"
-        placeholder="Search Restaurant"
-        />
-    </main>
-
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwD_aGqjIKy_owkJ4pQXAuRbujPXCFeCI&callback=initMap">
-    </script>
+    <h1>Restaurant Map</h1>
+    <input id="pac-input" class="type" type="text" placeholder="Search Restaurant">
+    <button id="myBtn">Enter</button>
+    <div id='map'></div>
+    <div id="panel"></div>
   
-  </body>
+   
 
+
+    <footer>
+      <p>Contact
+      <a href="mailto:here@example.com">here@example.com</a></p>
+    </footer>
+
+    <script async defer 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwD_aGqjIKy_owkJ4pQXAuRbujPXCFeCI&libraries=places&callback=initMap">
+    </script>
+
+</body>
 </html>
