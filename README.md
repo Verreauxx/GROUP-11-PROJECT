@@ -22,10 +22,10 @@ API’s to be used: The APIs to be used will be Google Maps
 as well as Pinterest. Both are available. 
 
 Breakdown of tasks:
-Justin: working on recipe API and creating a TO-DO list under the “projects tab” in the Repo
-Sadiq: Frame out a story for the front end and exactly like it will look like with a drawing /rendering and that person will also do the Powerpoint and Readme.
-Tino: working on restaurant API and logo
-Leah: Manager, in charge of the repo in Github (accepting changes) and take the EXCALIDRAW and design it in Bootstrap and CSS
+1.Justin: working on recipe API and creating a TO-DO list under the “projects tab” in the Repo
+2.Sadiq: Frame out a story for the front end and exactly like it will look like with a drawing /rendering and that person will also do the Powerpoint and Readme.
+3.Tino: working on restaurant API and logo
+4.Leah: Manager, in charge of the repo in Github (accepting changes) and take the EXCALIDRAW and design it in Bootstrap and CSS
 Our group proudly states that we will all be working on 
 HTML, CSS as well as any questions that may come up. 
 We would prefer to assign tasks as smaller items as we 
