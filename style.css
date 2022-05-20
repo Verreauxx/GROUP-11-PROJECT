@@ -92,15 +92,8 @@ p {
     box-shadow: 2px 2px var(--dark);
 }
 
-.hero {
-    padding: 3% 4%;
-    background-color: var(--dark);
-    color: var(--primary);
-}
 
-.hero p {
-    max-width: 75%;
-}
+
 
 .app-title {
     font-size: 3rem;
@@ -161,7 +154,16 @@ p {
 .card-body {
     padding: 2.5%;
 }
-
+.search-about {
+    display: flex;
+    flex-direction: row;
+}
+.search {
+flex: .6;
+}
+.about {
+flex: .4;
+}
 .form-label,
 .form-input,
 .form-textarea {
