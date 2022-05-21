@@ -12,26 +12,14 @@
   <body>
 
     <main>
-      <header>
-        <div>
-          <img src="https://i.ibb.co/2qpHXJY/Whip-Logo.png" alt="Company Logo">
-          <p>Whip up a recipe, or around the corner!</p>
-        </div>
-      </header>
-
     <h1>Restaurant Map</h1>
     <input id="pac-input" class="type" type="text" placeholder="Search Restaurant">
     <button id="myBtn" onclick="getNearbyPlaces()">Enter</button>
     <div id='map'></div>
-    <div id="panel"></div>
-  
-   
+    <div id='panel'>Restaurant Info</div>
+    
+    </main>
 
-
-    <footer>
-      <p>Contact
-      <a href="mailto:here@example.com">here@example.com</a></p>
-    </footer>
 
     <script async defer 
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwD_aGqjIKy_owkJ4pQXAuRbujPXCFeCI&libraries=places&callback=initMap">

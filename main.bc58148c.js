@@ -68,20 +68,11 @@ function getNearbyPlaces() {
   };
   map = new google.maps.Map(document.getElementById('map'), {
     center: pos,
-    zoom: 15
+    zoom: 8
   });
   service = new google.maps.places.PlacesService(map);
   service.nearbySearch(request, nearbyCallback);
 }
-
-// var searchbar = document.getElementById("pac-input");
-// search.addEventListener("keypress", function(event) {
-//   if (event.key === "Enter") {
-//     event.preventDefault();
-//     document.getElementById("myBtn").click();
-//   }
-// });
-
 
 function nearbyCallback(results, status) {
   if (status == google.maps.places.PlacesServiceStatus.OK) {
@@ -132,6 +123,7 @@ function showDetails(placeResult, marker, status) {
 }
 
 function showPanel(placeResult) {
+  console.log('here')
   if (infoPane.classList.contains("open")) {
     infoPane.classList.remove("open");
   }
@@ -147,7 +139,7 @@ function showPanel(placeResult) {
     photo.src = firstPhoto.getUrl();
     infoPane.appendChild(photo);
   }
-
+ 
   let name = document.createElement('h1');
   name.classList.add('place');
   name.textContent = placeResult.name;
