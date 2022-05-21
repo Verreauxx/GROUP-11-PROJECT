@@ -1,5 +1,4 @@
 var search = document.getElementById("myBtn")
-var searchbar = document.querySelector("type")
 
 let pos;
 let map;
@@ -56,25 +55,33 @@ function handleLocationError(browserHasGeolocation, infoWindow) {
   getNearbyPlaces(pos);
 }
 
-function getNearbyPlaces(position) {
+function getNearbyPlaces() {
+  console.log("getNearbyPlace")
+  var searchbar = document.getElementById("pac-input")
   var food = searchbar.value
-  console.log (food)
+  console.log(food)
+  console.log(pos) 
   let request = {
-    location: position,
+    location: pos,
     rankBy: google.maps.places.RankBy.DISTANCE,
     keyword: food
   };
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: pos,
+    zoom: 15
+  });
   service = new google.maps.places.PlacesService(map);
   service.nearbySearch(request, nearbyCallback);
 }
 
-var search = document.getElementById("pac-input");
-search.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    document.getElementById("myBtn").click();
-  }
-});
+// var searchbar = document.getElementById("pac-input");
+// search.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     document.getElementById("myBtn").click();
+//   }
+// });
+
 
 function nearbyCallback(results, status) {
   if (status == google.maps.places.PlacesServiceStatus.OK) {
